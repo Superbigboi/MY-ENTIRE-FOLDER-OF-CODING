@@ -11,18 +11,27 @@
  const getWeatherData = (city) =>{
     const url = "https://api.openweathermap.org/data/2.5/weather";
     const Full_URL = `${url}?q=${city}&appid=${API_KEY}&units=imperial`;
-    const weatherpromise = fetch(Full_URL);
-    return weatherpromise.then((response) =>{
-        return response.JSON();
+    const weatherPromise = fetch(Full_URL);
+    return weatherPromise.then((response) =>{
+        return response.json();
     })
- }
+ };
 
  const searchCity = () => {
     const city = document.getElementById('city-input').value;
     getWeatherData(city).then((res)=>{
+        // console.log(res)
         showWeatherData(res);
     }).catch((error)=>{
         console.log(error);
         console.log('something when wrong');
     })
+ };
+
+ showWeatherData = (weatherData) =>{
+    document.getElementById("city-name").innerText = weatherData.name;
+    document.getElementById("min-temp").innerText = weatherData.main.temp_min;
+    document.getElementById("temp").innerText = weatherData.main.temp;
+    document.getElementById("max-temp").innerText = weatherData.main.temp_max;
+    document.getElementById("weather-type").innerText = weatherData.weather[0].main;
  }
