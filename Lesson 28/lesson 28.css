@@ -1,0 +1,30 @@
+.lp{
+    background-color: rgb(239, 217, 221);
+}
+.active{
+    background-color: rgb(255, 255, 255);
+}
+.bg-pink{
+    background-color: rgb(255, 192, 203);
+    height: auto;
+}
+.bg-hp{
+    background-color: rgb(211, 66, 93);
+}
+.head{
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.lg{
+    background-color: #eee;
+}
+.bg-blue{
+    background-color: #87CEEB;
+}
+.db{
+    background-color: rgb(134, 134, 255);
+}
+.bg-grey{
+    background-color: #808080;
+}

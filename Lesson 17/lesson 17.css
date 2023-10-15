@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+}
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    background-color: #335;
+    overflow: hidden;
+}
+li{
+    float:left;
+    border-right:1px solid black;
+}
+li a{
+    display: block;
+    color:white;
+    text-align: center;
+    padding:16px;
+    text-decoration: none;
+}
+li a:hover:not(active){
+    background-color: #111;
+}
+.active{
+    background:green;
+}
+.scale-div:hover{
+    transform: scaleY(2);
+}
+.scale-div{
+    width:300px;
+    height: 200px;
+    margin: 200px;
+    border:1px solid black
+}
+.spanning:hover{
+    transform: scale(0.5,0.5) ;
+}
+.normal{
+    width:150px;
+    height: 50px;
+    border: 1px solid black
+}
+.skewed{
+    width:150px;
+    height: 50px;
+    border:1px solid blue;
+}
+.skewed:hover{
+    transform:skew(-20deg)
+}
+.Transform{
+    width:150px;
+    height: 50px;
+    margin: 20px;
+    border:1px solid red
+}
+.Transform:hover{
+    transform: rotateX(130deg);
+}
+.testy{
+    width:200px;
+    height:200px;
+    background-color: blue;
+    transition: width  2s, height 4s;
+}
+.testy:hover{
+    width:300px;
+    height:300px;
+}
+div{
+    width:100px;
+    height:100px;
+    background-color: green;
+    transition: width 2s;
+    margin:5px;
+}
+div:hover{
+    width:300px;
+}
+.div1{
+    transition-timing-function: linear;
+}
+.div2{
+    transition-timing-function: ease;
+}
+.div3{
+    transition-timing-function: ease-in;
+}
+.div{
+    transition-timing-function: ease-in-out;
+}
+.delay{
+    width:100px;
+    height:100px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+    transition-delay: 1s;
+}
+.delay:hover{
+    width:400px;
+    height: 400px;
+    transform: rotate(270deg);
+}
+@keyframes animate1{
+    0%{background-color: green,; top: 0px,;left: 10px; }
+
+25%{background-color: blue; left: 50px,;}
+
+    50%{ background-color: yellow; left: 500px; top:0px;}
+    75%{background-color: purple; left:0px;top:300px;}
+    100%{ background-color: orange; left:0px; top:0px;}
+}
+.animate1{
+    height:100px;
+    width:100px;
+    background-color: green;
+    animation-name:animate1;
+    animation-duration: 10s;
+    position: relative;
+    border-radius:50%;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}

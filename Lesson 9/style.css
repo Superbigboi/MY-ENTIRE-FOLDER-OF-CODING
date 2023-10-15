@@ -1,0 +1,116 @@
+a:link,a:visited{
+    padding:10px 20px;
+    color:white;
+    background-color: green;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    border-radius: 50px;
+}
+a:hover,a:active{
+    background-color: red;
+}
+/* body{
+    background-image:url(t.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+.texture{
+    background-image: url('t2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+table,th,td{
+    border:none;
+    padding: 5px;
+    border-collapse: collapse;
+    /* border-radius:10px ; */
+}
+/* th,td{
+    background-color: red;
+} */
+
+.header{
+    background-color:aqua;
+    text-align: center;
+    font-size: 30px;
+}
+.footer{
+    background-color:greenyellow;
+    font-size: 15px;
+    height:100px;
+}
+.news1{
+    background-color: lightblue;
+    font-size: 20px;
+    padding:20px;
+}
+.news2{
+    background-color: darkred;
+    font-size:20px;
+    padding:20px;
+}
+.news3{
+    background-color: lightsalmon;
+    font-size:20px;
+    padding:20px;
+
+}
+.news4{
+    background-color:wheat;
+    font-size:20px;
+    padding:20px;
+}
+.news5{
+    background-color:gray;
+    font-size:20px;
+    padding:20px;
+}
+.news6{
+    background-color:blueviolet;
+    font-size:20px;
+    padding:20px;
+}
+.container{
+    position: relative;
+}
+.box1{
+    background-color: red;
+    width: 300px;
+    height: 200px;
+    margin:auto;
+    z-index:1;
+    position:absolute;
+    border: 2px solid green;
+}
+.box2{
+    background-color: blue;
+    width: 300px;
+    height: 200px;
+    margin:auto;
+    z-index:2;
+    position:absolute;
+    border: 2px solid orchid;
+    top: -15px;
+    left:75px;
+}
+.box3{
+    background-color: orange;
+    width: 300px;
+    height: 200px;
+    margin:auto;
+    z-index:3;
+    position:absolute;
+    border: 2px solid red;
+    left:150px;
+}
+body{
+    /* With this you cannot scroll up or down
+    overflow-y:hidden; */
+    overflow:auto;
+}

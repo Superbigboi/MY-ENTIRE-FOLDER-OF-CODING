@@ -1,0 +1,14 @@
+a[target="_blank"]{
+    color:red;
+}
+input[type="text"]{
+    background-color: red;
+    padding:20px;
+    width:100%;
+}
+input[type="email"]{
+    background-color: blue;
+    padding: 10px;
+    width:50%;
+    border: 1px solid green;
+}

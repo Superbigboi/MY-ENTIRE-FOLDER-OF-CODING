@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="lesson 25.css">
+    <title>Lesson 25 - Sunday, July 2nd, 2023 </title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="javascript:void(0)" class="navbar-brown">Michael</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MyNavbar"><span class="navbar-toggler-icon">Michael</span> </button>
+        <div class="collapse navbar-collapse" id="MyNavbar">
+            <ul class="navbar-nav mx-auto nav-pills">
+                <li class="nav-item"> <a href="#" class="nav-link active">Link 1</a></li>
+                <li class="nav-item"> <a href="#" class="nav-link">Link 2</a></li>
+                <li class="nav-item"> <a href="#" class="nav-link">Link 3</a></li>
+            </ul>
+            <form class="d-flex">
+                <input type="search" placeholder="Search..." class="form-control me-2">
+                <button type="submit" class="bg-primary border-0 rounded-3">Search</button>
+            </form>
+        </div>
+        
+        </div>
+    </nav>
+
+    <div class="container">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contact">Contact us</button>
+
+        <p class="text-primary fs-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Hello World">Hover Over Me</p>
+
+
+
+
+
+
+
+        <div class="modal" id="contact">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Contact Me</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="fs-5">To contact me please fill the form below</h2>
+                        <div class="my-4">
+                            <form>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="fname">First Name</label>
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
+                                    <div class="col-md-6">
+                                            <label for="lname">Last Name</label>
+                                            <input type="text" class="form-control" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-12">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                    
+                                </div>
+                                 
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="phone">Phone</label>
+                                            <input type="tel" class="form-control" placeholder="Phone">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="city">City</label>
+                                            <select class="form-control form-select">
+                                            <option value="Abuja">Abuja</option>
+                                            <option value="Lagos" selected>Lagos</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha512-VK2zcvntEufaimc+efOYi622VN5ZacdnufnmX7zIhCPmjhKnOi9ZDMtg1/ug5l183f19gG1/cBstPO4D8N/Img==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

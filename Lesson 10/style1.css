@@ -1,0 +1,31 @@
+/* body{
+    background-color: lightblue;
+} */
+.div1 p:last-child{
+    color:blue;
+}   
+p{
+    color:brown;
+}
+p span{
+    color:goldenrod;
+}
+.div1:hover{
+    background-color: black;
+}
+.div2 #pie:hover{
+    background-color: black;
+}
+header h1:hover{
+    font-size: 40px;
+}
+.p3{
+    display: none;
+    background-color:greenyellow ;
+    padding:20px;
+    width: 200px;
+    text-align: center;
+}
+.div3:hover .p3{
+    display:block;
+}

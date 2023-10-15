@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson 49a - Satuday, October 7th, 2023 and Sunday</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="Lesson 49a.css">
+    </head>
+<body class="bg-black">
+
+        <div class="container-fluid fw-bold">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 pl-1">
+                        <div class="card bg-dark text-white fs-6">
+                            <div class="card-body">
+                                <div class="form" data-bs-theme="dark">
+                                    <label for="" class="form-label">Bill Total</label>
+                                    <input type="text" class="form-control rounded-5" id="billTotal" onkeyup="calculateBill()">
+                                    <br>
+                                    <label for="" class="form-label">Tip</label>
+                                    <input type="text" class="form-control rounded-5" id="tip" onkeyup="calculateBill()">
+                              
+                                      <div class="d-flex justify-content-between mt-4">
+                                        <p>People</p>
+                                        <p>Total per Person</p>
+                                      </div>
+                                        <div class="d-flex justify-content-between align-content-center">
+                                            <div class="d-flex align-items-center">
+                                                <div>
+                                                    <button class="btn btn-primary btn-sm d-flex justify-content-center align-items-center rounded-circle btn-sm fw-bold" style="height:20px; width:20px" onclick="increasePeople()"><span>+</span></button>
+                                                </div>
+                                                <span id="people" class="px-2">1</span>
+                                                <div class="">
+                                                    <button class="btn btn-primary btn-sm d-flex justify-content-center align-items-center rounded-circle btn-sm fw-bold" style="height:20px; width:20px" onclick="decreasePeople()"> <span>-</span></button>
+                                                </div>
+                                            </div>
+                                                <span class="fs-3" id="result">$0.00</span>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha512-VK2zcvntEufaimc+efOYi622VN5ZacdnufnmX7zIhCPmjhKnOi9ZDMtg1/ug5l183f19gG1/cBstPO4D8N/Img==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.min.js" integrity="sha512-y8/3lysXD6CUJkBj4RZM7o9U0t35voPBOSRHLvlUZ2zmU+NLQhezEpe/pMeFxfpRJY7RmlTv67DYhphyiyxBRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script src="Lesson 49a.js"></script>
+</body>
+</html>

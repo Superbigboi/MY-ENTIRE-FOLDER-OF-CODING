@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank - Lesson 34 - Saturday, August 12th, 2023</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bank.css">
+</head>
+<body class="b-green">
+   <div class="container-fluid">
+        <div class="container">
+                    <div class="btn-group d-flex justify-content-center align-items-center">
+                        <div class="mt-5 bg-success align-items-center bg-sucess rounded-1 btn-head">
+                          <button type="button" class="btn">
+                              <box-icon type='solid' name='bank' color="white" size="lg"></box-icon>
+                          </button>  
+                          <button type="button" class="btn">
+                              <box-icon name='search-alt' color="white" size="lg"></box-icon>
+                          </button>
+                          <button type="button" class="btn">
+                              <box-icon name='paper-plane' color="white" size="lg"></box-icon>
+                          </button>
+                          <button type="button" class="btn">
+                              <box-icon name='store' type='solid' color="white" size="lg"></box-icon>
+                          </button>
+                          <button type="button" class="btn">
+                              <box-icon name='mobile' color="white" size="lg"></box-icon>
+                          </button>
+                        </div>
+                    </div>
+   </div>
+   </div>
+                        <div class="mt-3 d-flex justify-content-center">
+                            <input type="text" id="inputValue" placeholder="Deposit Amount" class="rounded-1 py-4">
+                        </div>
+                            <div class="d-flex justify-content-center mt-2">
+                                <button type="button" id="deposit"  class="rounded-0 btn btn-success color-white d-flex align-items-center ">Deposit<box-icon name='plus' color="white"></box-icon></button>
+                                <button type="button" id="withdraw" class="ml-3 rounded-0 btn btn-success color-white d-flex align-items-center">Withdraw<box-icon name='minus' color="white"></box-icon></button>
+                            </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="text-white">Balance</h6>
+                                <p id="balance" class="text-white">$1100</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="row border-bottom border-secondary">
+                                    <div class="d-flex justify-content-between">
+                                        <p>Gas Station</p>
+                                        <p>$100</p> 
+                                    </div>
+                                </div>
+                                <div class="pt-2 row border-bottom border-secondary">
+                                    <div class="d-flex justify-content-between">
+                                        <p>Clothing</p>
+                                        <p>$53.77</p> 
+                                    </div>
+                                </div>
+                                <div class="pt-2 row border-bottom border-secondary">
+                                    <div class="d-flex justify-content-between">
+                                        <p>House Rent</p>
+                                        <p>$220.85</p> 
+                                    </div>
+                                </div>
+                                <div class="pt-2 row">
+                                    <div class="d-flex justify-content-between">
+                                        <p>Burger Joint</p>
+                                        <p>$24.09</p> 
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                     
+        </div>
+   </div>
+    <script src="bank.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha512-VK2zcvntEufaimc+efOYi622VN5ZacdnufnmX7zIhCPmjhKnOi9ZDMtg1/ug5l183f19gG1/cBstPO4D8N/Img==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.min.js" integrity="sha512-y8/3lysXD6CUJkBj4RZM7o9U0t35voPBOSRHLvlUZ2zmU+NLQhezEpe/pMeFxfpRJY7RmlTv67DYhphyiyxBRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

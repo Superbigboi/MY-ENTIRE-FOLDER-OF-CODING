@@ -1,0 +1,45 @@
+h1,p{
+    color:goldenrod;
+}
+#intro{
+    font-size: 30px;
+}
+div{
+    font-weight: bold;
+}
+.paragraph{
+    font-family:sans-serif;
+}
+body{
+    /* background-image: url(t.png);
+    background-repeat:no-repeat;
+    background-position:top left;
+    background-attachment: fixed;
+    background-size:cover;
+    background-color: red; */
+    background:  url(t.pg) no-repeat top right fixed;
+}
+
+/* 
+*{
+    text-decoration: line-through;
+} */
+
+.image{
+    width:300px;
+    height:300px;
+    background-color: lightblue;
+    margin: auto;
+    padding:20px;
+    border:10px solid black;
+    outline: 10px solid blue;
+}
+/* .imaged{
+    border-width:10px;
+    border-style:solid;
+    border-color:black;
+    padding:10px;
+} */
+.imagec{
+    text-align: center;
+}

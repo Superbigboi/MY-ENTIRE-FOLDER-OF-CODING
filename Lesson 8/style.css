@@ -1,0 +1,89 @@
+p{
+    color:red;
+    text-align: justify;
+    font-size: 35px;
+    /* text-shadow: 2px 2px 5px black, 3px 3px 6px green,4px 4px 6px brown; */
+    font-style:italic;
+    text-transform: capitalize;
+}
+.naira{
+    font-weight: bold;
+    text-decoration: line-through;
+    text-decoration-style:double ;
+    /* text-decoration-color:blue; */
+    padding-right: 5px;
+}
+a.one{
+    color:green;
+    cursor:help;
+}
+a.two{
+    color:brown;
+    cursor:crosshair;
+
+}
+a.three{
+    color:blue;
+    cursor:progress;
+
+}
+a{
+    text-decoration: none;
+}
+h1{
+    text-decoration: underline;
+    font-size: 40px;
+    text-transform: uppercase;
+    color:brown;
+    text-align: center;
+}
+
+table,th,td{
+    border:none;
+    padding: 5px;
+    border-collapse: collapse;
+    border-radius:10px ;
+    border-color: blue;
+    border-style:solid;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+.s{
+    padding-left:10px;
+}
+.price{
+    font-style:italic ;
+}
+.out{
+    color:red;
+}
+body{
+    background-color: lightsteelblue;
+    margin: 0;
+}
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    background-color: #335;
+    overflow: hidden;
+}
+li{
+    float:left;
+    border-right:1px solid black;
+}
+li a{
+    display: block;
+    color:white;
+    text-align: center;
+    padding:16px;
+    text-decoration: none;
+}
+li a:hover:not(active){
+    background-color: #111;
+}
+.active{
+    background:green;
+}

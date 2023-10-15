@@ -1,0 +1,64 @@
+p.p1::first-line{
+    text-transform: uppercase;
+    color:blue;
+}
+p.p1::first-letter{
+    font-size:28px;
+}
+
+h1::after{
+    content:' and this is through css';
+}
+p::after{
+    content:" but this paragraph has ended through css";
+}
+::marker{
+    color:red;
+    font-size:20px;
+}
+::selection{
+    background-color: chartreuse;
+    color:tomato
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:2px 8px;
+    width:200px;
+    background-color: #f1f1f1;
+    /* border: 1px solid black; */
+    position: fixed;
+    overflow:auto;
+    height:100%;
+    top:0;
+    position:fixed;
+}
+li a{
+    display: block;
+    color:#000;
+    padding: 8px 16px;
+    text-decoration: none;    
+}
+li a:hover{
+    background-color: red;
+    color:white;
+}
+li a:active{
+    background-color: green;
+    color:white;
+}
+li{
+    /* text-align:center;  */
+    border-bottom: 1px solid #775;
+}
+li:last-child{
+    border-bottom:none;
+}
+body{
+    margin:0;
+}
+.main{
+    margin-left: 30%;
+    padding: 2px 16px;
+    height:50px
+}

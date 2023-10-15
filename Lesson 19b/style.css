@@ -1,0 +1,126 @@
+body {
+   margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+  li {
+    float: left;
+}
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+}
+  
+  .active {
+    background-color: #04AA6D;
+}
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 200px 200px;
+    gap: 10px;
+    background-color: #6d7d8a;
+    padding: 10px;
+}
+
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 200px 200px 200px;
+    gap: 10px;
+    background-color: #6d7d8a;
+    padding: 10px;
+}
+
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.intropic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+  
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+  .footer {
+    height: 50px;
+    background-color: #333;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.daily p{
+    /* column-count:3; */
+    background-color: lightblue;
+    column-gap: 30px;
+    column-rule: 5px solid blue;
+    column-width: 200px;
+  }
+/* /* @media screen and (min-width:576px) {
+ li{
+  float:none;
+
+} */
+h1{
+  text-align: center;
+}
+.list{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  width:150px;
+  /* text-align: left !important; */
+}
+.list li a{
+  text-align: start;
+}
+.tlist{
+  text-align: start;
+}

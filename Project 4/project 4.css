@@ -1,0 +1,14 @@
+.first-bg{
+    /* background-color:navy; */
+    height:600px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.amount{
+    font-size:14px;
+    color:#333;
+}
+.contain{
+    height:400px;
+}

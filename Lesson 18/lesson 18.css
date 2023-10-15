@@ -1,0 +1,153 @@
+/* div{
+ width:100px;
+ height: 50px;
+ background-color: blue;
+ margin:2px;
+ position: relative;
+ animation:testspeed 5s infinite;
+}
+.linear{
+    animation-timing-function: linear;
+}
+.ease{
+    animation-timing-function: ease;
+}
+.ease-in{
+    animation-timing-function: ease-in;
+}
+.ease-out{
+    animation-timing-function: ease-out;
+}
+.ease-in-out{
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes testspeed{
+    from{left:0px;}
+    to{left:500px;}
+} */
+.m-object{
+    width:70px;
+    height:70px;
+    background-color: green; 
+    position: absolute;
+    border-radius: 50%;
+    animation: myobject 7s ease-in 2s infinite alternate;   
+    z-index: -99;
+}
+@keyframes myobject{
+    0%{background-color:green; left:0%;top:10%;}
+    25%{background-color:blue; top:10%; left:70%;}
+    50%{background-color: red; left:70%;top:70%;}
+    75%{background-color: orange;left:0%;top:70%}
+    100%{background-color: green; left:0%; top:10%}
+}
+body{
+    background-color: lightsteelblue;
+    margin: 0;
+}
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    background-color: #335;
+    overflow: hidden;
+}
+li{
+    float:left;
+    border-right:1px solid black;
+}
+li a{
+    display: block;
+    color:white;
+    text-align: center;
+    padding:16px;
+    text-decoration: none;
+}
+li a:hover:not(active){
+    background-color: #111;
+}
+.active{
+    background:green;
+}
+.tooltip{
+    position: relative;
+    display:inline-block;
+    border-bottom: 1px dashed blue;
+}
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color:white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index:1;
+    /* show at right hand side */
+    /* top: -5px;
+    left:105%; */
+
+    /* show at left hand side */
+    /* top:-5px;
+    right:105% */
+
+    /* show at top side */
+    bottom: 100%;
+    margin-left:-60px;
+    left:50%;
+    opacity: 0%;
+    transition: opacity 1s ;
+
+    /* show at bottom side */
+    /* top:100%;
+    margin-left:-60px;
+    left:50%; 
+    */
+}
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity:1;
+}
+.intro{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,255,0.2);
+    flex-direction: column;
+    text-align:center;
+    color:white;
+}
+.profile-pic{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+}
+h2{
+    font-size: 36px;
+}
+.btn1{
+    padding: 10px 20px;
+    background-color: rgba(0,255,0,0.3);
+    color:whitesmoke;
+    font-size: 20px;
+    border-radius:50px;
+    border:0;
+}
+.btn2{
+    padding: 10px 20px;
+    background-color:transparent;
+    color:whitesmoke;
+    font-size: 20px;
+    border-radius:50px;
+    border:3px solid rgba(0,255,0,0.6);
+    margin-left:10px;
+}
+span{
+    margin-top:-2%;
+    color:white;
+}

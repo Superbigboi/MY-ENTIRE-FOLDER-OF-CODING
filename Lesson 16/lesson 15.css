@@ -1,0 +1,88 @@
+.grad{
+    height: 200px;
+    background-color: red;
+    background-image: linear-gradient(to bottom left, red, purple);   
+}
+.grad2{
+    height: 200px;
+    /* background-color:red; */
+    background-image: linear-gradient(90deg,rgb(160, 32, 240),rgba(160, 32, 240,0.1),rgba(0,255,0,0.3));
+}
+.grad3{
+    height: 200px;
+    background-image:repeating-linear-gradient(90deg,blue,yellow 10%,green 20%) ;
+}
+.grad4{
+    height: 200px;
+    background-color: red;
+    background-image: repeating-radial-gradient(circle,red,yellow 10%,green 20%);   
+}
+.grad5{
+    height: 200px;
+    width: 200px;
+    background-image: conic-gradient(red,yellow,orange,green,blue,purple);
+
+}
+.grad6{
+    height: 200px;
+    width:200px;
+    background-image:conic-gradient(rgba(255,0,0,2.2),rgba(0,0,255,0.2),rgba(0,0,255,0)) 
+}
+.grad7{
+    height: 200px;
+    width:200px;
+    background-image: conic-gradient(red 45deg, yellow 90deg,green 180deg);
+}
+.grad8{
+    height: 200px;
+    width: 200px;
+    background-image:conic-gradient(red,blue,yellow,green,orange) ;
+    border-radius:50%;
+}
+.grad9{
+    height: 200px;
+    width: 200px;
+    background-image: conic-gradient(red 0deg,red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+    border-radius: 50%;
+}
+.grad10{
+    height: 200px;
+    width: 200px;
+    background-image: conic-gradient(from 90deg, red,yellow,green);
+}
+.grad11{
+    height: 200px;
+    width: 200px;
+    background-image: conic-gradient(at 40% 60%,red,yellow,blue);
+}
+.grad12{
+    height: 200px;
+    width: 200px;
+    background-image: repeating-conic-gradient(red 10%,yellow 20%);
+    border-radius: 50%;
+}
+.grad13{
+    height: 200px;
+    width: 200px;
+    background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg,blue 20deg 30deg );
+    border-radius: 50%;
+}
+.boxshadow{
+    height: 200px;
+    width:300px ;
+    background-image: linear-gradient(green,white);
+    box-shadow: 10px 10px red, 15px 15px yellow, 20px 20px green;
+    padding: 10px;
+    margin:10px;
+}
+.translate{
+    height: 200px;
+    width: 300px ;
+    border: 1px solid red;
+    background-image: linear-gradient(yellow,green);
+    /* transform: translate(100px, 50px); */
+}
+.translate:hover{
+    /* transform: translate(100px, 50px); */
+    transform:rotate(270deg)
+}

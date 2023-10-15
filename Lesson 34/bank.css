@@ -1,0 +1,19 @@
+.b-green{
+    background-color: rgb(39, 190, 87);
+}
+.btn:hover{
+    background-color: black;
+}
+.input{
+    height: 50px;
+}
+.ml-3{
+    margin-left: 5px;
+}
+.card-header{
+    background-size: 100% 100%;
+    background-image: url("bg_2.jpg");
+    background-repeat:no-repeat;
+    height:120px;
+    width:250px;
+}

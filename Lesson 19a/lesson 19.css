@@ -1,0 +1,60 @@
+.btn1{
+    padding:10px 20px;
+    text-align: center;
+    background-color: blue;
+    border-radius:5px;
+    border:0;
+    color:white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.btn1:hover{
+    /* background-color:white;
+    color:green;
+    border: 1px solid green */
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.3);
+}
+.disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+.btn-group .btn2{
+    background-color: green;
+    color:white;
+    border:1px solid #4CAF50;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-size:20px;
+    cursor:pointer;
+    /* float:left; */
+}
+.btn-group:hover .btn2:hover{
+    background-color: white;
+    color:green;
+}
+body{
+    background-color:lightblue;
+}
+.pagination a{
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: blue;
+    color:white;
+    border:1px solid black;
+    margin: 0 4px;
+    border-radius: 6px;   
+}
+.pagination a:hover{
+    background-color: white;
+    color:black;
+}
+.pagination a.active:hover{
+    background-color: white;
+    color:black;
+}
+.pagination a.active{
+    background-color: green;
+    color:white;
+}

@@ -1,0 +1,12 @@
+.first-bg{
+    background-image:url('cons.jpg');
+    height:600px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.amount{
+    font-size:14px;
+    color:#333;
+
+}

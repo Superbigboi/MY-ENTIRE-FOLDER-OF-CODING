@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 5 - Sunday, April 16th, 2023</title>
+    <style>
+        dt{
+            font-size: 20px;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body style="background:grey">
+    <h2>Different Shonuen Animes</h2>
+    <ul style="list-style-type: square">
+        <li>Naruto</li>
+        <li>Bleach</li>
+        <li>One Piece</li>
+        <li>Demon Slayer</li>
+        <li>Jujutsu Kaisen</li>
+        <li>Dragon Ball</li>
+    </ul>
+
+    <dl>
+        <dt>Basic Types of Chakra Natures</dt>
+        <dd>Wind</dd>
+        <dd>Lightning</dd>
+        <dd>Fire</dd>
+        <dd>Water</dd>
+        <dd>Wind</dd>
+        <dd>Earth</dd>
+        <br>
+        <dt>Different types of Breathing Styles</dt>
+        <dd>Moon Breathing</dd>
+        <dd>Sun Breathing</dd>
+        <dd>Sound Breathing</dd>
+        <dd>Thunder Breathing</dd>
+        <dd>Water Breathing</dd>
+        <br>
+    </dl>
+<div style="display:flex;">
+    <audio controls style="margin-right: 40%;">
+        <source src="sh.mp3" type="audio/mp3">
+    </audio>
+    <video controls muted height="360" width="480">
+        <source src="v.mp4" type="video/mp4">
+    </video>
+</div>
+    <p id="demo"></p>
+    <button type="button" onclick="reverts()">This button will revert the header to its original size</button>
+    <h1 id="ademo" onclick="bigger()"></h1>
+    <img id="t" src="t.jpg" alt="Tanjiro using Sun Breathing" height="360" width="480">
+    <br>
+    <br>
+    <button type="button" onclick="changeimage()">Change Image</button>
+    <button type="button" onclick="changeback()">Revert Image Back</button>
+    <script>
+        document.getElementById("demo").innerHTML="This is Made from Javascript";
+        document.getElementById("ademo").innerHTML="This was also Made from Javascript, You can also click on me to make me bigger";
+        document.getElementById("ademo").style.color="darkred";
+
+        // document.getElementById("t").src="f.jpg";
+        function changeimage(){
+            document.getElementById("t").src="f.jpg";
+        } ;
+        function changeback(){
+            document.getElementById("t").src="t.jpg";
+        } ;
+        function bigger(){
+            document.getElementById("ademo").style.fontSize="40px";
+        }
+        function reverts(){
+            document.getElementById("ademo").style.fontSize="32px";
+        }
+
+    </script>
+</body>
+
+</html>
