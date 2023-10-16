@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 46 - Sunday, September 46</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+    <link rel = "stylesheet" type = "text/css" href="Lesson 46a.css">
+
+
+</head>
+<body>
+    <div class = "calculator">
+        <div class = "display">
+            <p>0 rizz</p>
+        </div> 
+        <div class = "buttons">
+            
+            <button id = "AC" onclick="allClear()">AC</button>
+            <button id = "plus_minus"onclick="plusMinus('-')">+/-</button>
+            <button id = "percent" onclick="percent()">%</button>
+            <button class="operator" onclick="addOperation('/')">&divide</button>
+            
+            <button class = "digit" onclick="addValue('7')">7</button>
+            <button class = "digit" onclick="addValue('8')">8</button>
+            <button class = "digit" onclick="addValue('9')">9</button>
+            <button class="operator" onclick="addOperation('*')">x</button>
+            
+            <button class = "digit" onclick="addValue('4')">4</button>
+            <button class = "digit" onclick="addValue('5')">5</button>
+            <button class = "digit" onclick="addValue('6')">6</button>
+            <button class="operator" onclick="addOperation('-')">-</button>
+            
+            <button class = "digit" onclick="addValue('1')">1</button>
+            <button class = "digit" onclick="addValue('2')">2</button>
+            <button class = "digit" onclick="addValue('3')">3</button>
+            <button class="operator" onclick="addOperation('+')">+</button>
+            
+            <button class = "digit" id="zero" onclick="addValue('0')">0</button>
+            <button class = "digit" onclick="addDecimal('.')">.</button>
+            <button class="operator" onclick="calculate()">=</button>
+          
+
+            
+        </div>   
+    </div>
+
+    <script src="Lesson 46a.js"></script>
+</body>
+</html>
