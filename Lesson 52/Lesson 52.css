@@ -1,0 +1,21 @@
+.nav-item{
+    transition: width 2s, height 4s;
+    transition: font-size ease-in-out .1s;
+    transform: translateZ(0);
+    will-change: transform;
+}
+.nav-item a{
+    transform: translateX(0);
+    will-change: transform;
+    border-bottom: 0px solid #ffc400;
+}
+.nav-item:hover {
+    font-size: 30px;
+}
+.nav-item a:hover{
+    border-bottom: 3px solid #ffc400;
+}
+
+.mt-6{
+    margin-top:100px;
+}
