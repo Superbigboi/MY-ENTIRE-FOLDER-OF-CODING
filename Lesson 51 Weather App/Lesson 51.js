@@ -35,3 +35,4 @@
     document.getElementById("max-temp").innerText = weatherData.main.temp_max;
     document.getElementById("weather-type").innerText = weatherData.weather[0].main;
  }
+ onchange
