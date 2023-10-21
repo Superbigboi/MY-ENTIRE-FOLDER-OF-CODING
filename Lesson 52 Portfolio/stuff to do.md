@@ -11,7 +11,6 @@ Contact section
 Footer
 
 
-
 What to do for the working form
 
 First Name                     Last Name
@@ -20,9 +19,6 @@ Email
 
 Phone Number               Service
 
-
 Additional Message (optional)
-
-
 
 submit button  cancel button (if pressed, will close the page)
