@@ -26,3 +26,24 @@ console.log(Person4)
 // empty object
 const empty = {}
 console.log(empty)
+
+// inputing things inside an empty object
+const notEmpty = {}
+notEmpty.name = "Michael"
+notEmpty.age = 21
+notEmpty.address = "house"
+delete notEmpty.age
+console.log(notEmpty)
+
+const boss = {
+    name:"Jacob",
+    age:50,
+    location:"Lagos",
+    cars:{
+        car1:"Camery",
+        car2:"Honda",
+        car3:"Lexus",
+    }
+}
+console.log(boss)
+console.log(boss.cars.car3)
