@@ -66,4 +66,29 @@ console.log(boss.mcars[0])
 console.log(boss.FullName())
 console.log(boss.Message())
 
+function Student(Name ,Class, Address){
+    this.name =     Name;
+    this.class = Class;
+    this.address = Address;
+}
+const myStudent = new Student("Peter","SS2","Abuja");
+console.log(myStudent);
 
+
+
+// function (a,b) {
+// 
+// }
+
+
+const sum = function (a,b) {
+    return a*b;
+};
+// let result = sum(4,6);
+console.log(sum(4,6));
+
+
+
+
+
+// Im watching Tokyo Revengers Season 2 episode 5, and the latest episode of One Piece is 1080 (the best anime imo)
