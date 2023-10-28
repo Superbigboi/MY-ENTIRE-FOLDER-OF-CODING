@@ -36,14 +36,23 @@ delete notEmpty.age
 console.log(notEmpty)
 
 const boss = {
-    name:"Jacob",
+    fname:"Jacob",
+    lname:"Garcia",
     age:50,
-    location:"Lagos",
     cars:{
         car1:"Camery",
         car2:"Honda",
         car3:"Lexus",
+    },
+    mcars:["Honda","Nissan", "Toyota" ],
+    favorites:[
+        favorite1="One Piece",
+        favorite2="Basketball",
+        favortite3="Fortnite"],
+    FullName: function(){
+        return this.fname+""+this.lname
     }
 }
 console.log(boss)
 console.log(boss.cars.car3)
+console.log(cars[0])
