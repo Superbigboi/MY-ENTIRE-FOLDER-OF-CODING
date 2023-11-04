@@ -82,15 +82,21 @@ class Player {
   }
   // ** Heal the player for random number from  1 to 5 **
   heal (player) {
-    // Get random number between 1 - 5 and store that in hpAmount
-    let hpAmount = Math.ceil(Math.random() * 5)
-    // Add hpAmount to players health
-    player.health += hpAmount
-    //  Update the game and DOM with updateGame
-    updateGame(p1,p2,gameState)
-    //  Return a message of 'player name heals for hpAmount HP'
-    return `${player.name} heals for ${hpAmount} HP!`
-  }
+  // Get random number between 1 - 5 and store that in hpAmount
+  let hpAmount = Math.ceil(Math.random() * 5)
+  // Add hpAmount to players health
+  player.health += hpAmount
+
+          // I did this myself so u cant get 100 health (u could get infinite health before 💀 lol)
+            if(player.health>100){
+              player.health=100;
+            }
+  //  Update the game and DOM with updateGame
+  updateGame(p1,p2,gameState)
+  //  Return a message of 'player name heals for hpAmount HP'
+  return `${player.name} heals for ${hpAmount} HP!`
+    }
+   
 }
 
 // ** Create the Game class with all it's attributes and methods to run a match **
