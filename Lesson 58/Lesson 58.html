@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 58 - Sunday, November 5th, 2023 - some javascript projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Lesson 58.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row my-5">
+            <div class="col-md-4">
+            <button id="click" class="btn btn-dark" onclick="toggler()">Toggle Profile</button>
+                <div class="card" id="nav">
+                    <div class="card-header">
+                        <h3>Profile</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div class="position-relative">
+                                <img src="me.jpg" class="rounded-circle" alt="me at 13" width="70px" height="70px" id="pic">
+                            </div>
+                            <div class="" style="margin-left: 20px;">
+                                <div class="d-flex flex-column">
+                                    <span class="fw-semibold">Name:</span>
+                                    <span>Michael Kranda</span>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span class="fw-semibold">Email:</span>
+                                    <span>realkranda@gmail.com</span>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span class="fw-semibold">Address:</span>
+                                    <span>Abuja</span>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span class="fw-semibold">Gender:</span>
+                                    <span>Male</span>
+                                </div>
+                            </div>
+                        </div>
+                            <span class="fw-semibold">Bio:</span>
+                            <div class="card">
+                                <div class="card-body">
+                                    <span>I am a One Piece fan that is also a passionate coder learning from Mr. Job Sunday</span>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form" id="form">
+                            <form action="">
+                                <div class="mt-3">
+                                    <div class="mt-3">
+                                        <label for="Name" class="form-label">Name:</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter Name" name="Name">
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                </div>
+                                <div class="mt-3">
+                                    <label for="Address" class="form-label">Address:</label>
+                                    <input type="text" class="form-control" id="address" placeholder="Enter Address" name="Address">
+                                </div>
+                                <div class="mt-3">
+                                    <label for="gender" class="form-label">Gender:</label>
+                                    <br>
+                                    <input type="radio" class="form-check-input" id="address" placeholder="Male" name="Address">Male
+                                    <br>
+                                    <input type="radio" class="form-check-input" id="address" placeholder="Female" name="Address">Female
+                                </div>
+                                <div class="mt-3">
+                                    <label for="textarea">Bio:</label>
+                                    <textarea class="form-control" rows="3"></textarea>  
+                                </div>
+                                <label for="pwd" class="form-label">Password:</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                                    <button type="button" class="input-group-text" id="hs" onclick="togglef()"><box-icon type='solid' name='show'></box-icon></button>
+                                  </div>
+                                  <button type="submit" class="btn btn-dark mt-2">Create Profile</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha512-VK2zcvntEufaimc+efOYi622VN5ZacdnufnmX7zIhCPmjhKnOi9ZDMtg1/ug5l183f19gG1/cBstPO4D8N/Img==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.min.js" integrity="sha512-y8/3lysXD6CUJkBj4RZM7o9U0t35voPBOSRHLvlUZ2zmU+NLQhezEpe/pMeFxfpRJY7RmlTv67DYhphyiyxBRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script src="Lesson 58.js"></script>
+</body>
+</html>
