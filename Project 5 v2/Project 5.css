@@ -1,0 +1,81 @@
+.signup-btn{
+    margin-left:10px;
+    background-color:  #E94339;
+    border:0;
+    }
+    .nav-item .nav-link{
+    font-weight: 600;
+    color:000;
+    }
+    .login-btn{
+        font-weight: 600;
+    }
+.intro-head{
+    font-family: Inter;
+    font-size: 40px;
+    font-style:normal;
+    font-weight: 700;
+    line-height: 65px;
+}
+.intro-p{
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word
+}
+.order-input:focus{
+    outline: none !important;
+    box-shadow: none !important ;
+}
+.delivery-container{
+    width: 570px;
+    height: 478px;
+    flex-shrink: 0;
+    border-radius: 36px;
+    background: #F2EBDA;
+}
+.dish-head{
+text-align: center;
+font-family: Inter;
+font-size: 46px;
+font-style: normal;
+font-weight: 600;
+line-height: 58px; /* 126.087% */
+letter-spacing: -0.46px;
+text-transform: capitalize;
+}
+.dish-p{
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+    letter-spacing: -0.18px;
+}
+.dishes-container{
+    width: 108px;
+    height: 108px;
+    flex-shrink: 0;
+    background-color: #fff;
+}
+.dish-p-2{
+text-align: center;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 100% */
+letter-spacing: -0.24px;
+}
+.delivery-p{
+    font-family: Inter;
+    font-size: 25.8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.258px;
+}
+.ch{
+    height: 250px;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 59 - Saturday, November 11th, 2023 - some javascript projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Project 5.css">
+
+</head>
+<body>
+    
+    <div class="container-fluid px-0 mb-3">
+        <!-- Naviagtion Bar Start -->
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+              <a class="navbar-brand fs-3" href="javascript:void(0)">🍕</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="mynavbar">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#dish">Dishes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#guide">Guide</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#test">Testimonies</a></li>
+                        <li><a class="dropdown-item" href="#sub">Subscribe</a></li>
+                        <li><a class="dropdown-item" href="#Contact">Contact Us</a></li>
+                      </ul>
+                 </li>
+                </ul>
+                <div class="d-flex">
+                  <button type="button" class="btn px-3 login-btn">Log In</button>
+                  <button class="btn btn-danger px-3 signup-btn rounded-5" type="button">Sign Up</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- Navigation Bar End -->
+          <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h3 class="intro-head">Your Favorite Food Delivery Partner</h3>
+                            <p class="intro-p py-3">The food at your doorstep. Why starve when you have us. You hunger partner. Straight out of the oven to your doorstep. </p>  
+
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="p-2 bg-light rounded-5">
+                            <div class="input-group">
+                                <input type="text" class="form-control rounded-5 border-0 bg-light order-input" placeholder="Enter Your delivery location" aria-label="Username" aria-describedby="basic-addon1">
+                                <button class="input-group-text rounded-5 text-white fw-semibold" id="basic-addon1" style="background-color:#E94339;">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="my-4">
+                            <img src="ap.png" alt="" class="">
+                            <img src="gp.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="delivery-container d-flex justify-content-center align-items-center">
+                    <img src="man.png" alt="">
+                </div>
+            </div>
+            <!-- Row end -->
+          </div>
+          <div class="row mt-5">
+            <div class="">
+                <div class="row">
+                    <div class="d-flex justify-content-center">
+                        <div class="col-md-6">
+                             <h4 class="dish-head">More Than <span style="color:#E94339">10,000</span> Dishes to order!</h4>
+                             <p class="dish-p text-center">Welcome to The Biggest Network of Food Ordering & Delivery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!-- row ended -->
+          <div class="row">
+            <div class="">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="card ch bg-light border-0 rounded-4 py-4">
+                            <div class="card-body d-flex justify-content-center">
+                                <div>
+                                    <div class="d-flex justify-content-center align-items-center dishes-container rounded-circle">
+                                        <span class="fs-1">🍕</span> 
+                                     </div>
+                                     <p class="dish-p-2 mt-4">Pizza</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card ch bg-light border-0 rounded-4 py-4">
+                            <div class="card-body d-flex justify-content-center">
+                                <div>
+                                    <div class="d-flex justify-content-center align-items-center dishes-container rounded-circle">
+                                        <span class="fs-1">🍔</span> 
+                                     </div>
+                                     <p class="dish-p-2 mt-4">Burger</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card ch bg-light border-0 rounded-4 py-4">
+                            <div class="card-body d-flex justify-content-center">
+                                <div>
+                                    <div class="d-flex justify-content-center align-items-center dishes-container rounded-circle">
+                                        <span class="fs-1">🍣</span> 
+                                     </div>
+                                     <p class="dish-p-2 mt-4">Sushi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card ch bg-light border-0 rounded-4 py-4" >
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <p class="delivery-p">Find <span style="color:#E94339">deals</span>, <span style="color:#009B00">free delivery</span>, and more from our restaurant partners.</p>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <img src="car.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <!-- row ended  -->
+    </div>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha512-VK2zcvntEufaimc+efOYi622VN5ZacdnufnmX7zIhCPmjhKnOi9ZDMtg1/ug5l183f19gG1/cBstPO4D8N/Img==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.min.js" integrity="sha512-y8/3lysXD6CUJkBj4RZM7o9U0t35voPBOSRHLvlUZ2zmU+NLQhezEpe/pMeFxfpRJY7RmlTv67DYhphyiyxBRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script src="Project 5.js"></script>
+</body>
+</html>
