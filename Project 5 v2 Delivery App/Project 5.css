@@ -86,5 +86,15 @@ letter-spacing: -0.24px;
     height: 150px
 }
 .mt{
-    margin-top:90px
+    margin-top:300px
+}
+.mt-6{
+    margin-top:100px
+}
+.w{
+    width: 1255px;
+    height: 140px
+}
+.ps5{
+    padding-left: 65px;
 }
