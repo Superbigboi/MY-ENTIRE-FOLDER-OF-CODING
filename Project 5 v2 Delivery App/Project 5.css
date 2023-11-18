@@ -83,7 +83,8 @@ letter-spacing: -0.24px;
     font-size:75px;
 }
 .dish-cont{
-    height: 150px
+    height: 150px;
+    background-color: #fff;
 }
 .mt{
     margin-top:300px
@@ -97,4 +98,18 @@ letter-spacing: -0.24px;
 }
 .ps5{
     padding-left: 65px;
+}
+.dishes-container-2{
+    width: 95px;
+    height:95px;
+    background-color: #fff;
+    flex-shrink: 0;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5vw;
+  height: 5vw;
+}
+.cardP{
+    background-color: #ffa39e !important;
 }

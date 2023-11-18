@@ -160,19 +160,43 @@
               <div class="col-md-6 d-flex align-items-center">
                 <div>
                     <i class='bx bxs-quote-right fs-0'></i>
-                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua.”</p>
+                    <!-- <div class="row">
+                        <div class="col-md-8">
+                            <p>"Click on either Pasta, Salad, Desserts for something to happen, 
+                                i need a larger text area, so imma just type this."</p>
+                        </div>
+                    </div> -->
+                    <div class="row" id="pasta-desc">
+                        <div class="col-md-8">
+                                <p>“What is pasta? Italian pasta (pronounced “PAS-tah”) is a collective name for a category of food made from wheat flour and water, sometimes with egg.”</p>
+
+                        </div>
+                    </div>
+                    <div class="row" id="salad-desc" style="display: none">
+                        <div class="col-md-8">
+                            <p>“A salad is a dish consisting of mixed ingredients, frequently vegetables. They are typically served chilled or at room temperature,”</p>
+
+                        </div>
+                    </div>
+                    <div class="row" id="dessert-desc" style="display: none">
+                        <div class="col-md-8">
+                            <p>“Desserts can be defined as a usually sweeter course that concludes a meal. This definition includes a range of courses ranging from deez nuts."</p>
+
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
 
             <div class="col-md-6">
                 <div class="row d-flex justify-content-between">
                     <div class="col-md-4">
-                        <div class="card ch bg-light border-0 rounded-4 py-4">
+                        <div class="card ch bg-light border-0 rounded-4 py-4 cardP" id="pasta-card">
                             <div class="card-body d-flex justify-content-center">
                                 <div>
                                     <div class="d-flex justify-content-center align-items-center dishes-container rounded-circle">
-                                        <span class="fs-1" id="pasta">🍝</span> 
+                                        <span class="fs-1">🍝</span> 
                                     </div>
                                     <p class="dish-p-2 mt-4">Pasta</p>
                                 </div>
@@ -180,11 +204,11 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card ch bg-light border-0 rounded-4 py-4">
+                        <div class="card ch bg-light border-0 rounded-4 py-4" id="salad-card">
                             <div class="card-body d-flex justify-content-center">
                                 <div>
                                     <div class="d-flex justify-content-center align-items-center dishes-container rounded-circle">
-                                        <span class="fs-1" id="salad">🥗</span> 
+                                        <span class="fs-1" >🥗</span> 
                                     </div>
                                     <p class="dish-p-2 mt-4">Salad</p>
                                 </div>
@@ -192,13 +216,13 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card ch bg-light border-0 rounded-4 py-4">
+                        <div class="card ch bg-light border-0 rounded-4 py-4" id="dessert-card">
                             <div class="card-body d-flex justify-content-center">
                                 <div>
                                     <div class="d-flex justify-content-center align-items-center dishes-container rounded-circle">
                                         <span class="fs-1">🍰</span> 
                                     </div>
-                                    <p class="dish-p-2 mt-4" id="salad">Dessert</p>
+                                    <p class="dish-p-2 mt-4" >Dessert</p>
                                 </div>
                             </div>
                         </div>
@@ -212,68 +236,75 @@
             <div>
                 <h3 class="text-center fs-2 fw-bold" id="guide">How To Order?</h3>
             </div>
-              <div class="row d-flex justify-content-between">
-                  <div class="col-md-3">
-                      <div class="card ch bg-light border-0 rounded-4 py-4">
-                        <div class="card-header bg-light border-0">
-                            <p class="fs-2 fw-bold" style="color:#FF5331">01</p>
-                        </div>
-                          <div class="card-body d-flex justify-content-center">
-                              <div>
-                                  <div class="d-flex justify-content-center align-items-center dish-cont rounded-circle">
-                                      <span class="fs-1 text-center" id="pasta">📍</span> 
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <div class="col-md-10">
+                        <div class="row mt-3 gx-5">
+                            <div class="col-md-3">
+                              <p class="text-danger fw-bold fs-2" style="color:#FF5331;">01</p>
+                              <div class="card bg-light border-0 rounded-4 py-1">
+                                  <div class="card-body d-flex justify-content-center">
+                                          <div class="card-body">
+                                              <div class="d-flex justify-content-center">
+                                                  <div class="d-flex justify-content-center align-items-center dishes-container rounded-4" style>
+                                                      <span class="fs-1">📍</span>
+                                                  </div>
+                                              </div>
+                                              <p class="dish-p-2 mt-5">Choose your location</p>
+                                          </div>
+                                      
                                   </div>
-                                  <p class="dish-p-2 text-center">Choose your location</p>
                               </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-3">
-                      <div class="card ch bg-light border-0 rounded-4 py-4">
-                        <div class="card-header bg-light border-0">
-                            <p class="fs-2 fw-bold" style="color:#FF5331">02</p>
-                        </div>
-                          <div class="card-body d-flex justify-content-center">
-                              <div>
-                                  <div class="d-flex justify-content-center align-items-center dish-cont rounded-circle">
-                                      <span class="fs-1" id="salad">🙇🏻‍♂️</span> 
+                            </div>
+                            <div class="col-md-3">
+                              <p class="text-danger fw-bold fs-2" style="color:#FF5331;">02</p>
+                              <div class="card bg-light border-0 rounded-4 py-1">
+                                  <div class="card-body d-flex justify-content-center">
+                                          <div class="card-body">
+                                              <div class="d-flex justify-content-center">
+                                                  <div class="d-flex justify-content-center align-items-center dishes-container rounded-4">
+                                                      <span class="fs-2">🙇🏻‍♂️</span>
+                                                  </div>
+                                              </div>
+                                              <p class="dish-p-2 mt-5">Choose what to eat</p>
+                                          </div>
                                   </div>
-                                  <p class="dish-p-2">Choose what to eat</p>
                               </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-3">
-                      <div class="card ch bg-light border-0 rounded-4 py-4">
-                        <div class="card-header bg-light border-0">
-                            <p class="fs-2 fw-bold" style="color:#FF5331">03</p>
-                        </div>
-                          <div class="card-body d-flex justify-content-center">
-                              <div>
-                                  <div class="d-flex justify-content-center align-items-center dish-cont rounded-circle">
-                                      <span class="fs-1">🍔</span> 
+                            </div>                  
+                            <div class="col-md-3">
+                              <p class="text-danger fw-bold fs-2" style="color:#FF5331;">03</p>
+                              <div class="card bg-light border-0 rounded-4 py-1">
+                                  <div class="card-body d-flex justify-content-center">
+                                          <div class="card-body">
+                                              <div class="d-flex justify-content-center">
+                                                  <div class="d-flex justify-content-center align-items-center dishes-container rounded-4">
+                                                      <span class="fs-2">🍔</span>
+                                                  </div>
+                                              </div>
+                                              <p class="dish-p-2 mt-5">May your first order</p>
+                                          </div>
                                   </div>
-                                  <p class="dish-p-2" id="salad">May your first order</p>
                               </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-3">
-                      <div class="card ch bg-light border-0 rounded-4 py-4">
-                        <div class="card-header bg-light border-0">
-                            <p class="fs-2 fw-bold" style="color:#FF5331">04</p>
-                        </div>
-                          <div class="card-body d-flex justify-content-center">
-                              <div>
-                                  <div class="d-flex justify-content-center align-items-center dish-cont rounded-circle">
-                                      <span class="fs-1">🏠</span> 
+                            </div>
+                            <div class="col-md-3">
+                              <p class="text-danger fw-bold fs-2" style="color:#FF5331;">04</p>
+                              <div class="card bg-light border-0 rounded-4 py-1">
+                                  <div class="card-body d-flex justify-content-center">
+                                          <div class="card-body">
+                                              <div class="d-flex justify-content-center">
+                                                  <div class="d-flex justify-content-center align-items-center dishes-container rounded-4">
+                                                      <span class="fs-2">🏠</span>
+                                                  </div>
+                                              </div>
+                                              <p class="dish-p-2 mt-5">Now! Your food in way</p>
+                                          </div>
                                   </div>
-                                  <p class="dish-p-2" id="salad">Now! Your food in way</p>
                               </div>
-                          </div>
-                      </div>
-                  </div>
-              </div> 
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
       </div>
               <!-- The how to order? part ending part -->
               <!-- Our Clients Feedback part START   -->
@@ -281,20 +312,70 @@
                 <div class="d-flex justify-content-center text-center">
                     <div class="">
                         <h3 class="fs-1 ">Our Clients Feedback</h3>
-                        <p class="">The food at your doorstep. Why starve when you have us. You hunger partner. <br>
-                            Straight out of the oven to your doorstep.</p>
-                            <div class="mt-5">
-                                <i class='bx bxs-quote-left fs-0' style="color:#FF5331"></i>
-                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor 
-                                    incididunt ut labore et dolore magna aliqua. Ut enim <br> ad minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi”</p>                            
-                            </div>
-                            <div class="mt-3">
-                                <span class="fw-bold">Michael Kranda</span>
-                                <p>A satisfied customer</p>
-                            </div>
-                    </div>
+                        <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
+                            <!-- Indicators/dots -->
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                            </div>
+                            
+                            <!-- The slideshow/carousel -->
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                          <div class="mt-4 text-center" id="">
+                                            <p>The food at your doorstep. Why starve when you have us. You hunger <br> partner. 
+                                                Straight out of the oven to your doorstep.</p> 
+                                                <box-icon type='solid' name='quote-left' size="lg" color="#FF5331"></box-icon>       
+                                                <div class="">
+                                                    <p>“There is supposed to be some long text here, but i don't have a lot to type, so ... yeah,
+                                                        this should be sliding by now. But yeah, this website is good, and you should try it out i guess”</p>
+                                                        <span class="fw-semibold">Michael Kranda</span>
+                                                        <br>
+                                                        <p class="">Not the CEO</p>
+                                                </div>
+                                  </div>    </div>
+                              <div class="carousel-item">
+                          <div class="mt-4 text-center" id="">
+                                            <p>The food at your doorstep. Why starve when you have us. You hunger <br> partner. 
+                                                Straight out of the oven to your doorstep.</p> 
+                                                <box-icon type='solid' name='quote-left' size="lg" color="#FF5331"></box-icon>       
+                                                <div class="">
+                                                    <p>“somebody forced me to this fr fr, like u should try it i guess, because it was worth my time 
+                                                    getting food i could've gotten from a Fast Food Resurant delivered to me in like a minute”</p>
+                                                        <span class="fw-semibold">Sophia Kranda</span>
+                                                        <br>
+                                                        <p class="">A satisfied customer</p>
+                                                </div>
+                                </div>    </div>
+                              <div class="carousel-item">
+                          <div class="mt-4 text-center" id="">
+                                            <p>The food at your doorstep. Why starve when you have us. You hunger <br> partner. 
+                                                Straight out of the oven to your doorstep.</p> 
+                                                <box-icon type='solid' name='quote-left' size="lg" color="#FF5331"></box-icon>       
+                                                <div class="">
+                                                    <p>“bro, there is already door dash, Uber Eats and Jumia Food. I was hungry 
+                                                      and found out about this new company, and they were paying you if you talked 
+                                                      good about the company, and they already payed me, so you know what im doing
+                                                      now huh. Firstly, this isn't good food. Secondly, the driver ate ALL of my food before even bringing 
+                                                      it to me, can u imagine?!?!? (this actually happened)”</p>
+                                                        <span class="fw-semibold">The angry one</span>
+                                                        <br>
+                                                        <p class="">An unsatisfied customer</p>
+                                                </div>
+                                </div>    </div>
+                            </div>
+                            
+                            <!-- Left and right controls/icons -->
+                            <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next bg-dark" type="button" data-bs-target="#demo" data-bs-slide="next">
+                              <span class="carousel-control-next-icon"></span>
+                            </button>
+                          </div>
+                    </div>
                 </div>
               </div>
             </div>
@@ -306,15 +387,37 @@
                                 <p>Browse local restaurants and businesses for delivery by entering your address blow.</p>
                             </div>
                         <div class="pt-4 col-md-4">
-                            <div class="input-group">
-                                <input type="text" class="form-control rounded-5 border-0 bg-light order-input" placeholder="Enter Your delivery location" aria-label="Username" aria-describedby="basic-addon1">
-                                <button class="input-group-text rounded-5 text-white fw-semibold" id="basic-addon1" style="background-color:#E94339;">Order Now</button>
+                            <div class="p-1 bg-light rounded-5">
+                                <div class="input-group">
+                                    <input type="text" class="form-control rounded-5 border-0 bg-light order-input" placeholder="Enter Your delivery location" aria-label="Username" aria-describedby="basic-addon1">
+                                    <button class="input-group-text rounded-5 text-white fw-semibold px-3" id="basic-addon1" style="background-color:#FF5331;">Send</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Our Client Feedback part END -->
+            <!-- Footer begins -->
+        <div class="container-fluid bg-dark">
+            <div class="">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>1</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>1</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>1</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- Footer ends -->
         </div>
 
 
