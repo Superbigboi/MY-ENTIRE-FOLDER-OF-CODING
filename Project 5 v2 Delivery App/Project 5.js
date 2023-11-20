@@ -31,4 +31,3 @@ cardDessert.addEventListener("click",()=>{
     cardSalad.classList.remove("cardP")
     cardPasta.classList.remove("cardP")
 })
-
