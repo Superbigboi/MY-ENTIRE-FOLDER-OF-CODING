@@ -1,0 +1,28 @@
+this document here has USEful stuff to copy
+
+<buttonclass="btn t-purple d-flex justify-content-center">Learn More <box-iconname='chevron-right'color="#8D5CF6"></box-icon></button>
+
+
+
+1st one
+
+<div class="row">
+    <div class="col-md-6">
+
+    </div>
+
+    <div class="col-md-6">
+
+    </div>
+</div>
+
+
+2nd one
+
+    <div class="card">
+
+        <div class="card-body">
+
+        </div>
+
+    </div>

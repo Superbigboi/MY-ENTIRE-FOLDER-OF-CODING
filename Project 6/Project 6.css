@@ -5,7 +5,7 @@
     margin-top:100px
 }
 .t-purple{
-    color:#8D5CF6;
+    color:#8D5CF6 !important;
 }
 .b-purple{
     background-color: #8D5CF6;
@@ -13,3 +13,55 @@
 .fs-0{
     font-size:58px;
 }
+.c {
+    position: relative;
+    /* width: 50%; */
+  }
+  
+  /* Make the image responsive */
+  .c img {
+    /* width: 100%; */
+    height: auto;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .c .bt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8D5CF6;
+  }
+  .pl-5{
+    padding-left:120px;
+  }
+  .t-orange{
+    color:#FF7B52;
+  }
+  .t-fade{
+    color:#BDBDBD
+  }
+  .p-border{
+    border:1px solid #8D5CF6;
+  }
+  .bkg1{
+    background-image: url("b.png");
+    z-index: 1;
+  }
+  .bkg2{
+    background-image: url("girl.png");
+    z-index: 1;
+  }
+  .bkg3{
+    background-image: url("woman.png");
+    z-index: 1;
+  }
+  .w{
+    width:320px
+  }
