@@ -1,0 +1,26 @@
+.square{
+    height:200px;
+    width:200px;
+    background-color: green;
+}
+.square-1{
+    height:100px;
+    width:100px;
+    background-color: orange;
+    position: absolute;
+}
+.rectangle{
+    height:200px;
+    width:400px;
+    background-color: blue;
+}
+.circle{
+    width:200px;
+    height:200px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+.mt{
+    margin-top: 175px;
+}
